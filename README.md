@@ -1,9 +1,39 @@
-# AssertTitle
-Demo project for assertion
-Import a webdriver to access different objects/methods etc with "from selenium import webdriver
-Create an object for a browser "browser = webdriver.Firefox()" which uses FireFox as your browser
-Create a driver file to execute script "browser.get("http://selenium.dev") which will open the Selenium website to be tested in the firefox browser
-Open the browser in full screen for better viewing to test "browser.maximize_window()"
-Go to website and find the title under "right click, Inspect" to confirm title and create title as a variable "title = browser.title which will have the title of page opened
-print(title) prints the title found
-"assert "Selenium" in title" confirms that the value of title equals expected value "Selenium" to confirm title is correct.
+# Selenium Title Assertion Test (Python)
+
+This project uses Selenium WebDriver with Python to verify that the title 
+of a webpage contains the expected text. It's a simple script automation 
+to demonstrate basic Selenium setup and assertion skills.
+---
+
+## Tools & Technologies
+-Python 3.13
+-Selenium WebDriver
+-Firefox Browser
+-PyCharm
+---
+
+## Project Description ##
+The script:
+-Launches the Firefox browser
+-Opens the website: 'https://selenium.dev/'
+-Maximizes browsing window
+-Retrieves current page title
+-Asserts that title contains the word 'Selenium'
+-Prints the title to the console
+---
+
+**Steps:**
+1. Launch Firefox browser
+2. Navigate to the website
+3. Retrieve the page title
+4. Use an 'assert' statement to verify "Selenium" is in the title
+5. Output result to the console
+---
+
+## How to run test
+1. Clone this repository:
+2. Navigate into project folder: cd AssertTitleTest.py
+3. Install Selenium
+4. Ensure Firefox is installed and added to your system path.
+5. Run the script: AssertTitleTest.py
+@@
